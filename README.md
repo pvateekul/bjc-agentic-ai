@@ -32,7 +32,7 @@
 
 ## 2. Agentic AI with Codex
 
-1. Attachment: [Download Codex Lab Attachments (.zip)](https://github.com/pvateekul/bjc-agentic-ai/blob/main/2_Codex/assets/codex_lab_attachments.zip?raw=true)
+1. Attachment: [Download Codex Lab Attachments (.zip)](https://raw.githubusercontent.com/pvateekul/bjc-agentic-ai/main/2_Codex/assets/codex_lab_attachments.zip)
 2. Codex Lab Sheet [![Open In Google Docs](https://github.com/pvateekul/bjc-agentic-ai/blob/main/image/ggdoclogo.svg?raw=true)](https://docs.google.com/document/d/1SfCI6p4yOJ9RkIKWNJGU6aY3EctLOXwh/edit?usp=sharing&ouid=110988009260882465038&rtpof=true&sd=true")
 
 ## 3. NotebookLM
