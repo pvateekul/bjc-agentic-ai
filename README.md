@@ -9,7 +9,7 @@
 | **1. Introduction to AI** | 📄 [Introduction to AI](0_CourseOverview/IntroToAI.pdf) |
 | **2. Prompt Engineering** | 📄 [Prompt Engineering, RAG & Agentic Workflow](1_PromptEngineering/slides/PromptEng_RAG_Agentic.pdf)<br>📄 [LangChain and LangGraph](1_PromptEngineering/slides/LangChain_LangGraph.pdf) |
 | **3. Codex** | 📄 [Codex](2_Codex/slides/Codex.pdf) |
-| **4. NotebookLM** | 📄 [NotebookLM](3_NotebookLM/slides/NotebookLM.pdf)<br> |
+| **4. NotebookLM** | 📄 [NotebookLM](3_NotebookLM/NotebookLM.pdf)<br> |
 
 ---
 
@@ -32,7 +32,7 @@
 
 ## 2. Agentic AI with Codex
 
-1. Attachment: [Download Codex Lab Attachments (.zip)](https://github.com/pvateekul/bjc-agentic-ai/raw/5f73f85ef0b27682e0e8e5588ea56b37b2bcee08/2_Codex/assets/codex_lab_attachments.zip)
+1. Attachment: [Download Codex Lab Attachments (.zip)](https://github.com/pvateekul/bjc-agentic-ai/blob/main/2_Codex/assets/codex_lab_attachments.zip?raw=true)
 2. Codex Lab Sheet [![Open In Google Docs](https://github.com/pvateekul/bjc-agentic-ai/blob/main/image/ggdoclogo.svg?raw=true)](https://docs.google.com/document/d/1SfCI6p4yOJ9RkIKWNJGU6aY3EctLOXwh/edit?usp=sharing&ouid=110988009260882465038&rtpof=true&sd=true")
 
 ## 3. NotebookLM
@@ -43,6 +43,6 @@
 
 1. Model evaluation image detection with YOLO (Ultralytics Hub) : [![Open In Colab](https://raw.githubusercontent.com/pvateekul/bjc-agentic-ai/main/image/colab-badge.svg)](https://colab.research.google.com/github/pvateekul/bjc-agentic-ai/blob/main/4_YOLO/1_ultralyricshub.ipynb)
 
-2. Image detection with YOLO (Ultralytics) : [![Open In Colab](https://raw.githubusercontent.com/pvateekul/bjc-agentic-ai/main/image/colab-badge.svg)](https://colab.research.google.com/github/pvateekul/bjc-agentic-ai/blob/main/5_YOLO/2_ultralyrics.ipynb)
+2. Image detection with YOLO (Ultralytics) : [![Open In Colab](https://raw.githubusercontent.com/pvateekul/bjc-agentic-ai/main/image/colab-badge.svg)](https://colab.research.google.com/github/pvateekul/bjc-agentic-ai/blob/main/4_YOLO/2_ultralyrics.ipynb)
 
 3. No-code Version : [Slide](https://github.com/pvateekul/bjc-agentic-ai/blob/main/4_YOLO/Demo_Ultralytics.pdf)
