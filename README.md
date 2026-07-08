@@ -46,3 +46,5 @@
 2. Image detection with YOLO (Ultralytics) : [![Open In Colab](https://raw.githubusercontent.com/pvateekul/bjc-agentic-ai/main/image/colab-badge.svg)](https://colab.research.google.com/github/pvateekul/bjc-agentic-ai/blob/main/4_YOLO/2_ultralyrics.ipynb)
 
 3. No-code Version : [Slide](https://github.com/pvateekul/bjc-agentic-ai/blob/main/4_YOLO/Demo_Ultralytics.pdf)
+- Dataset 1 (Polyp) : [Download](https://raw.githubusercontent.com/pvateekul/bjc-agentic-ai/main/4_YOLO/polyp_detect.zip)
+- Dataset 2 (Food Defect Detection) : [Download](https://raw.githubusercontent.com/pvateekul/bjc-agentic-ai/main/4_YOLO/food_defects.v1i.yolov8.zip)
