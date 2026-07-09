@@ -6,7 +6,7 @@
 
 | Topic / Module | Presentation Slides |
 | :--- | :--- |
-| **1. Introduction to AI** | 📄 [Introduction to AI](0_CourseOverview/IntroToAI.pdf)<br> [or Google Drive Here](https://drive.google.com/file/d/1ymw5bLhFUPcIAFyq2nTaAN6DH22qbliP/view?usp=sharing) |
+| **1. Introduction to AI** | 📄 [Introduction to AI](0_CourseOverview/IntroToAI.pdf)
 | **2. Prompt Engineering** | 📄 [Prompt Engineering, RAG & Agentic Workflow](1_PromptEngineering/slides/PromptEng_RAG_Agentic.pdf)<br>📄 [LangChain and LangGraph](1_PromptEngineering/slides/LangChain_LangGraph.pdf) |
 | **3. Codex** | 📄 [Codex](2_Codex/slides/Codex.pdf) |
 | **4. NotebookLM** | 📄 [NotebookLM](3_NotebookLM/NotebookLM.pdf)<br> |
