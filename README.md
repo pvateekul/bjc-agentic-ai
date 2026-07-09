@@ -56,3 +56,8 @@
 2. Mock Data: [link](https://drive.google.com/file/d/1v2T2NzxOHH-E1wA09wL3LUgV78RTxerJ/view?usp=drive_link)
 3. OpenClaw Lab Demo Prompts: [Prompt Templates](./5_OpenClaw/Prompts.md)
 4. Discord Server Link: https://discord.com/invite/GsBa24QxjZ
+
+# Quiz 
+- quiz 1 : https://forms.gle/Uie6LHZ6nXzHUj7DA
+- quiz 2 : https://forms.gle/ubCb4kUShHHQbQuQ6
+- quiz 3 : https://forms.gle/qfsNZEMW6VmfNxje8
