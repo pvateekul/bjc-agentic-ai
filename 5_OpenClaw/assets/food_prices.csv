@@ -1,0 +1,421 @@
+date,product,region,price
+2025-01,Rice,Bangkok,42.95
+2025-01,Rice,Chiang Mai,39.51
+2025-01,Rice,Phuket,37.95
+2025-01,Rice,Hanoi,39.56
+2025-01,Rice,Kuala Lumpur,46.94
+2025-01,Tomatoes,Bangkok,34.78
+2025-01,Tomatoes,Chiang Mai,27.02
+2025-01,Tomatoes,Phuket,32.08
+2025-01,Tomatoes,Hanoi,31.07
+2025-01,Tomatoes,Kuala Lumpur,20.02
+2025-01,Chicken,Bangkok,74.52
+2025-01,Chicken,Chiang Mai,81.3
+2025-01,Chicken,Phuket,86.73
+2025-01,Chicken,Hanoi,78.9
+2025-01,Chicken,Kuala Lumpur,77.49
+2025-01,Eggs,Bangkok,4.9
+2025-01,Eggs,Chiang Mai,2.37
+2025-01,Eggs,Phuket,3.42
+2025-01,Eggs,Hanoi,4.0
+2025-01,Eggs,Kuala Lumpur,1.0
+2025-01,Milk,Bangkok,28.74
+2025-01,Milk,Chiang Mai,18.94
+2025-01,Milk,Phuket,19.3
+2025-01,Milk,Hanoi,26.53
+2025-01,Milk,Kuala Lumpur,27.87
+2025-01,Potatoes,Bangkok,20.25
+2025-01,Potatoes,Chiang Mai,19.2
+2025-01,Potatoes,Phuket,18.04
+2025-01,Potatoes,Hanoi,17.26
+2025-01,Potatoes,Kuala Lumpur,25.37
+2025-01,Onions,Bangkok,15.77
+2025-01,Onions,Chiang Mai,14.05
+2025-01,Onions,Phuket,10.63
+2025-01,Onions,Hanoi,18.69
+2025-01,Onions,Kuala Lumpur,20.7
+2025-02,Rice,Bangkok,42.95
+2025-02,Rice,Chiang Mai,37.26
+2025-02,Rice,Phuket,38.95
+2025-02,Rice,Hanoi,36.85
+2025-02,Rice,Kuala Lumpur,38.37
+2025-02,Tomatoes,Bangkok,35.61
+2025-02,Tomatoes,Chiang Mai,36.67
+2025-02,Tomatoes,Phuket,32.85
+2025-02,Tomatoes,Hanoi,27.02
+2025-02,Tomatoes,Kuala Lumpur,29.91
+2025-02,Chicken,Bangkok,87.53
+2025-02,Chicken,Chiang Mai,79.69
+2025-02,Chicken,Phuket,78.54
+2025-02,Chicken,Hanoi,78.54
+2025-02,Chicken,Kuala Lumpur,82.81
+2025-02,Eggs,Bangkok,2.68
+2025-02,Eggs,Chiang Mai,3.72
+2025-02,Eggs,Phuket,10.79
+2025-02,Eggs,Hanoi,5.39
+2025-02,Eggs,Kuala Lumpur,6.72
+2025-02,Milk,Bangkok,31.43
+2025-02,Milk,Chiang Mai,20.4
+2025-02,Milk,Phuket,23.07
+2025-02,Milk,Hanoi,24.51
+2025-02,Milk,Kuala Lumpur,26.35
+2025-02,Potatoes,Bangkok,11.4
+2025-02,Potatoes,Chiang Mai,17.25
+2025-02,Potatoes,Phuket,19.27
+2025-02,Potatoes,Hanoi,22.83
+2025-02,Potatoes,Kuala Lumpur,23.14
+2025-02,Onions,Bangkok,13.63
+2025-02,Onions,Chiang Mai,4.55
+2025-02,Onions,Phuket,13.01
+2025-02,Onions,Hanoi,13.51
+2025-02,Onions,Kuala Lumpur,26.43
+2025-03,Rice,Bangkok,36.91
+2025-03,Rice,Chiang Mai,41.44
+2025-03,Rice,Phuket,44.14
+2025-03,Rice,Hanoi,45.13
+2025-03,Rice,Kuala Lumpur,47.82
+2025-03,Tomatoes,Bangkok,23.21
+2025-03,Tomatoes,Chiang Mai,22.29
+2025-03,Tomatoes,Phuket,27.71
+2025-03,Tomatoes,Hanoi,23.12
+2025-03,Tomatoes,Kuala Lumpur,28.39
+2025-03,Chicken,Bangkok,78.02
+2025-03,Chicken,Chiang Mai,85.57
+2025-03,Chicken,Phuket,78.63
+2025-03,Chicken,Hanoi,80.65
+2025-03,Chicken,Kuala Lumpur,85.97
+2025-03,Eggs,Bangkok,1.0
+2025-03,Eggs,Chiang Mai,1.0
+2025-03,Eggs,Phuket,8.31
+2025-03,Eggs,Hanoi,5.33
+2025-03,Eggs,Kuala Lumpur,8.0
+2025-03,Milk,Bangkok,29.93
+2025-03,Milk,Chiang Mai,28.16
+2025-03,Milk,Phuket,19.57
+2025-03,Milk,Hanoi,28.55
+2025-03,Milk,Kuala Lumpur,23.5
+2025-03,Potatoes,Bangkok,14.39
+2025-03,Potatoes,Chiang Mai,30.24
+2025-03,Potatoes,Phuket,20.71
+2025-03,Potatoes,Hanoi,14.08
+2025-03,Potatoes,Kuala Lumpur,25.41
+2025-03,Onions,Bangkok,20.76
+2025-03,Onions,Chiang Mai,17.47
+2025-03,Onions,Phuket,12.36
+2025-03,Onions,Hanoi,9.7
+2025-03,Onions,Kuala Lumpur,16.97
+2025-04,Rice,Bangkok,42.75
+2025-04,Rice,Chiang Mai,40.68
+2025-04,Rice,Phuket,47.21
+2025-04,Rice,Hanoi,41.37
+2025-04,Rice,Kuala Lumpur,31.91
+2025-04,Tomatoes,Bangkok,28.17
+2025-04,Tomatoes,Chiang Mai,36.04
+2025-04,Tomatoes,Phuket,25.01
+2025-04,Tomatoes,Hanoi,37.0
+2025-04,Tomatoes,Kuala Lumpur,36.08
+2025-04,Chicken,Bangkok,82.46
+2025-04,Chicken,Chiang Mai,78.58
+2025-04,Chicken,Phuket,70.96
+2025-04,Chicken,Hanoi,84.56
+2025-04,Chicken,Kuala Lumpur,75.34
+2025-04,Eggs,Bangkok,1.5
+2025-04,Eggs,Chiang Mai,9.69
+2025-04,Eggs,Phuket,8.31
+2025-04,Eggs,Hanoi,1.21
+2025-04,Eggs,Kuala Lumpur,9.29
+2025-04,Milk,Bangkok,28.62
+2025-04,Milk,Chiang Mai,30.51
+2025-04,Milk,Phuket,30.87
+2025-04,Milk,Hanoi,29.96
+2025-04,Milk,Kuala Lumpur,45.46
+2025-04,Potatoes,Bangkok,27.89
+2025-04,Potatoes,Chiang Mai,21.96
+2025-04,Potatoes,Phuket,16.76
+2025-04,Potatoes,Hanoi,15.1
+2025-04,Potatoes,Kuala Lumpur,29.87
+2025-04,Onions,Bangkok,6.39
+2025-04,Onions,Chiang Mai,9.66
+2025-04,Onions,Phuket,20.62
+2025-04,Onions,Hanoi,12.41
+2025-04,Onions,Kuala Lumpur,15.08
+2025-05,Rice,Bangkok,40.63
+2025-05,Rice,Chiang Mai,38.12
+2025-05,Rice,Phuket,32.83
+2025-05,Rice,Hanoi,38.64
+2025-05,Rice,Kuala Lumpur,31.29
+2025-05,Tomatoes,Bangkok,34.05
+2025-05,Tomatoes,Chiang Mai,31.61
+2025-05,Tomatoes,Phuket,31.06
+2025-05,Tomatoes,Hanoi,28.12
+2025-05,Tomatoes,Kuala Lumpur,28.88
+2025-05,Chicken,Bangkok,78.24
+2025-05,Chicken,Chiang Mai,86.97
+2025-05,Chicken,Phuket,89.81
+2025-05,Chicken,Hanoi,82.64
+2025-05,Chicken,Kuala Lumpur,81.48
+2025-05,Eggs,Bangkok,1.0
+2025-05,Eggs,Chiang Mai,6.96
+2025-05,Eggs,Phuket,4.85
+2025-05,Eggs,Hanoi,1.0
+2025-05,Eggs,Kuala Lumpur,1.0
+2025-05,Milk,Bangkok,34.51
+2025-05,Milk,Chiang Mai,13.3
+2025-05,Milk,Phuket,32.24
+2025-05,Milk,Hanoi,21.39
+2025-05,Milk,Kuala Lumpur,15.8
+2025-05,Potatoes,Bangkok,23.73
+2025-05,Potatoes,Chiang Mai,24.75
+2025-05,Potatoes,Phuket,18.83
+2025-05,Potatoes,Hanoi,27.51
+2025-05,Potatoes,Kuala Lumpur,14.27
+2025-05,Onions,Bangkok,18.85
+2025-05,Onions,Chiang Mai,22.0
+2025-05,Onions,Phuket,12.12
+2025-05,Onions,Hanoi,10.08
+2025-05,Onions,Kuala Lumpur,8.23
+2025-06,Rice,Bangkok,46.61
+2025-06,Rice,Chiang Mai,47.32
+2025-06,Rice,Phuket,45.18
+2025-06,Rice,Hanoi,38.86
+2025-06,Rice,Kuala Lumpur,40.88
+2025-06,Tomatoes,Bangkok,28.36
+2025-06,Tomatoes,Chiang Mai,33.9
+2025-06,Tomatoes,Phuket,37.04
+2025-06,Tomatoes,Hanoi,28.14
+2025-06,Tomatoes,Kuala Lumpur,29.36
+2025-06,Chicken,Bangkok,88.9
+2025-06,Chicken,Chiang Mai,84.37
+2025-06,Chicken,Phuket,84.85
+2025-06,Chicken,Hanoi,87.03
+2025-06,Chicken,Kuala Lumpur,80.23
+2025-06,Eggs,Bangkok,1.0
+2025-06,Eggs,Chiang Mai,13.41
+2025-06,Eggs,Phuket,14.29
+2025-06,Eggs,Hanoi,12.43
+2025-06,Eggs,Kuala Lumpur,1.0
+2025-06,Milk,Bangkok,21.11
+2025-06,Milk,Chiang Mai,28.09
+2025-06,Milk,Phuket,19.67
+2025-06,Milk,Hanoi,28.48
+2025-06,Milk,Kuala Lumpur,17.39
+2025-06,Potatoes,Bangkok,16.1
+2025-06,Potatoes,Chiang Mai,21.33
+2025-06,Potatoes,Phuket,12.66
+2025-06,Potatoes,Hanoi,27.0
+2025-06,Potatoes,Kuala Lumpur,16.51
+2025-06,Onions,Bangkok,13.33
+2025-06,Onions,Chiang Mai,14.73
+2025-06,Onions,Phuket,14.63
+2025-06,Onions,Hanoi,14.62
+2025-06,Onions,Kuala Lumpur,14.11
+2025-07,Rice,Bangkok,33.7
+2025-07,Rice,Chiang Mai,33.22
+2025-07,Rice,Phuket,45.06
+2025-07,Rice,Hanoi,37.03
+2025-07,Rice,Kuala Lumpur,36.46
+2025-07,Tomatoes,Bangkok,37.17
+2025-07,Tomatoes,Chiang Mai,25.15
+2025-07,Tomatoes,Phuket,30.82
+2025-07,Tomatoes,Hanoi,31.93
+2025-07,Tomatoes,Kuala Lumpur,35.23
+2025-07,Chicken,Bangkok,91.95
+2025-07,Chicken,Chiang Mai,81.78
+2025-07,Chicken,Phuket,87.83
+2025-07,Chicken,Hanoi,71.59
+2025-07,Chicken,Kuala Lumpur,70.55
+2025-07,Eggs,Bangkok,1.0
+2025-07,Eggs,Chiang Mai,4.04
+2025-07,Eggs,Phuket,18.77
+2025-07,Eggs,Hanoi,6.26
+2025-07,Eggs,Kuala Lumpur,11.98
+2025-07,Milk,Bangkok,24.46
+2025-07,Milk,Chiang Mai,39.28
+2025-07,Milk,Phuket,37.72
+2025-07,Milk,Hanoi,17.76
+2025-07,Milk,Kuala Lumpur,23.01
+2025-07,Potatoes,Bangkok,31.56
+2025-07,Potatoes,Chiang Mai,18.23
+2025-07,Potatoes,Phuket,23.02
+2025-07,Potatoes,Hanoi,23.79
+2025-07,Potatoes,Kuala Lumpur,26.46
+2025-07,Onions,Bangkok,12.06
+2025-07,Onions,Chiang Mai,12.92
+2025-07,Onions,Phuket,11.8
+2025-07,Onions,Hanoi,19.98
+2025-07,Onions,Kuala Lumpur,1.92
+2025-08,Rice,Bangkok,49.13
+2025-08,Rice,Chiang Mai,48.08
+2025-08,Rice,Phuket,46.21
+2025-08,Rice,Hanoi,56.33
+2025-08,Rice,Kuala Lumpur,47.23
+2025-08,Tomatoes,Bangkok,36.49
+2025-08,Tomatoes,Chiang Mai,32.25
+2025-08,Tomatoes,Phuket,33.57
+2025-08,Tomatoes,Hanoi,20.21
+2025-08,Tomatoes,Kuala Lumpur,28.88
+2025-08,Chicken,Bangkok,88.13
+2025-08,Chicken,Chiang Mai,93.94
+2025-08,Chicken,Phuket,80.29
+2025-08,Chicken,Hanoi,70.83
+2025-08,Chicken,Kuala Lumpur,87.4
+2025-08,Eggs,Bangkok,1.0
+2025-08,Eggs,Chiang Mai,1.0
+2025-08,Eggs,Phuket,1.74
+2025-08,Eggs,Hanoi,1.0
+2025-08,Eggs,Kuala Lumpur,7.37
+2025-08,Milk,Bangkok,24.53
+2025-08,Milk,Chiang Mai,17.18
+2025-08,Milk,Phuket,14.45
+2025-08,Milk,Hanoi,19.77
+2025-08,Milk,Kuala Lumpur,17.65
+2025-08,Potatoes,Bangkok,22.45
+2025-08,Potatoes,Chiang Mai,24.97
+2025-08,Potatoes,Phuket,22.48
+2025-08,Potatoes,Hanoi,27.8
+2025-08,Potatoes,Kuala Lumpur,24.34
+2025-08,Onions,Bangkok,17.87
+2025-08,Onions,Chiang Mai,10.28
+2025-08,Onions,Phuket,11.87
+2025-08,Onions,Hanoi,6.82
+2025-08,Onions,Kuala Lumpur,25.79
+2025-09,Rice,Bangkok,43.09
+2025-09,Rice,Chiang Mai,42.13
+2025-09,Rice,Phuket,39.95
+2025-09,Rice,Hanoi,30.59
+2025-09,Rice,Kuala Lumpur,27.58
+2025-09,Tomatoes,Bangkok,19.69
+2025-09,Tomatoes,Chiang Mai,19.92
+2025-09,Tomatoes,Phuket,31.62
+2025-09,Tomatoes,Hanoi,43.64
+2025-09,Tomatoes,Kuala Lumpur,34.38
+2025-09,Chicken,Bangkok,81.95
+2025-09,Chicken,Chiang Mai,80.11
+2025-09,Chicken,Phuket,70.92
+2025-09,Chicken,Hanoi,76.58
+2025-09,Chicken,Kuala Lumpur,82.04
+2025-09,Eggs,Bangkok,23.3
+2025-09,Eggs,Chiang Mai,1.0
+2025-09,Eggs,Phuket,1.57
+2025-09,Eggs,Hanoi,1.0
+2025-09,Eggs,Kuala Lumpur,1.0
+2025-09,Milk,Bangkok,23.63
+2025-09,Milk,Chiang Mai,29.53
+2025-09,Milk,Phuket,32.26
+2025-09,Milk,Hanoi,27.04
+2025-09,Milk,Kuala Lumpur,16.19
+2025-09,Potatoes,Bangkok,26.81
+2025-09,Potatoes,Chiang Mai,21.79
+2025-09,Potatoes,Phuket,19.8
+2025-09,Potatoes,Hanoi,13.51
+2025-09,Potatoes,Kuala Lumpur,21.51
+2025-09,Onions,Bangkok,1.0
+2025-09,Onions,Chiang Mai,17.23
+2025-09,Onions,Phuket,11.97
+2025-09,Onions,Hanoi,6.35
+2025-09,Onions,Kuala Lumpur,8.8
+2025-10,Rice,Bangkok,32.93
+2025-10,Rice,Chiang Mai,40.12
+2025-10,Rice,Phuket,40.75
+2025-10,Rice,Hanoi,42.08
+2025-10,Rice,Kuala Lumpur,45.44
+2025-10,Tomatoes,Bangkok,39.5
+2025-10,Tomatoes,Chiang Mai,38.29
+2025-10,Tomatoes,Phuket,40.62
+2025-10,Tomatoes,Hanoi,20.6
+2025-10,Tomatoes,Kuala Lumpur,31.92
+2025-10,Chicken,Bangkok,86.06
+2025-10,Chicken,Chiang Mai,75.72
+2025-10,Chicken,Phuket,71.21
+2025-10,Chicken,Hanoi,85.28
+2025-10,Chicken,Kuala Lumpur,78.36
+2025-10,Eggs,Bangkok,7.2
+2025-10,Eggs,Chiang Mai,9.7
+2025-10,Eggs,Phuket,1.0
+2025-10,Eggs,Hanoi,1.0
+2025-10,Eggs,Kuala Lumpur,1.0
+2025-10,Milk,Bangkok,41.37
+2025-10,Milk,Chiang Mai,37.28
+2025-10,Milk,Phuket,16.43
+2025-10,Milk,Hanoi,10.39
+2025-10,Milk,Kuala Lumpur,36.6
+2025-10,Potatoes,Bangkok,31.04
+2025-10,Potatoes,Chiang Mai,37.13
+2025-10,Potatoes,Phuket,12.67
+2025-10,Potatoes,Hanoi,20.63
+2025-10,Potatoes,Kuala Lumpur,25.61
+2025-10,Onions,Bangkok,20.15
+2025-10,Onions,Chiang Mai,12.4
+2025-10,Onions,Phuket,19.38
+2025-10,Onions,Hanoi,19.6
+2025-10,Onions,Kuala Lumpur,3.1
+2025-11,Rice,Bangkok,48.63
+2025-11,Rice,Chiang Mai,38.49
+2025-11,Rice,Phuket,36.61
+2025-11,Rice,Hanoi,45.99
+2025-11,Rice,Kuala Lumpur,30.27
+2025-11,Tomatoes,Bangkok,47.32
+2025-11,Tomatoes,Chiang Mai,31.53
+2025-11,Tomatoes,Phuket,26.82
+2025-11,Tomatoes,Hanoi,34.87
+2025-11,Tomatoes,Kuala Lumpur,42.92
+2025-11,Chicken,Bangkok,77.73
+2025-11,Chicken,Chiang Mai,84.71
+2025-11,Chicken,Phuket,97.52
+2025-11,Chicken,Hanoi,86.81
+2025-11,Chicken,Kuala Lumpur,85.72
+2025-11,Eggs,Bangkok,11.83
+2025-11,Eggs,Chiang Mai,7.29
+2025-11,Eggs,Phuket,8.25
+2025-11,Eggs,Hanoi,10.87
+2025-11,Eggs,Kuala Lumpur,1.0
+2025-11,Milk,Bangkok,20.76
+2025-11,Milk,Chiang Mai,25.96
+2025-11,Milk,Phuket,23.78
+2025-11,Milk,Hanoi,17.47
+2025-11,Milk,Kuala Lumpur,15.8
+2025-11,Potatoes,Bangkok,5.36
+2025-11,Potatoes,Chiang Mai,15.64
+2025-11,Potatoes,Phuket,16.7
+2025-11,Potatoes,Hanoi,18.53
+2025-11,Potatoes,Kuala Lumpur,29.23
+2025-11,Onions,Bangkok,4.53
+2025-11,Onions,Chiang Mai,20.4
+2025-11,Onions,Phuket,18.34
+2025-11,Onions,Hanoi,20.8
+2025-11,Onions,Kuala Lumpur,9.5
+2025-12,Rice,Bangkok,31.85
+2025-12,Rice,Chiang Mai,41.39
+2025-12,Rice,Phuket,26.86
+2025-12,Rice,Hanoi,39.31
+2025-12,Rice,Kuala Lumpur,46.1
+2025-12,Tomatoes,Bangkok,27.96
+2025-12,Tomatoes,Chiang Mai,12.0
+2025-12,Tomatoes,Phuket,26.42
+2025-12,Tomatoes,Hanoi,23.92
+2025-12,Tomatoes,Kuala Lumpur,23.33
+2025-12,Chicken,Bangkok,79.69
+2025-12,Chicken,Chiang Mai,72.08
+2025-12,Chicken,Phuket,64.85
+2025-12,Chicken,Hanoi,81.04
+2025-12,Chicken,Kuala Lumpur,76.16
+2025-12,Eggs,Bangkok,9.13
+2025-12,Eggs,Chiang Mai,11.66
+2025-12,Eggs,Phuket,7.23
+2025-12,Eggs,Hanoi,3.72
+2025-12,Eggs,Kuala Lumpur,1.0
+2025-12,Milk,Bangkok,13.5
+2025-12,Milk,Chiang Mai,24.74
+2025-12,Milk,Phuket,28.17
+2025-12,Milk,Hanoi,16.61
+2025-12,Milk,Kuala Lumpur,27.36
+2025-12,Potatoes,Bangkok,15.2
+2025-12,Potatoes,Chiang Mai,20.86
+2025-12,Potatoes,Phuket,4.66
+2025-12,Potatoes,Hanoi,39.25
+2025-12,Potatoes,Kuala Lumpur,26.12
+2025-12,Onions,Bangkok,16.69
+2025-12,Onions,Chiang Mai,13.78
+2025-12,Onions,Phuket,4.29
+2025-12,Onions,Hanoi,19.74
+2025-12,Onions,Kuala Lumpur,1.0

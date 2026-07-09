@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenClaw - Capabilities Overview</title>
+    <meta
+      name="description"
+      content="A modern single-page overview of OpenClaw's capabilities, architecture, and demo/test server."
+    />
+    <style>
+      :root {
+        --bg: #08111d;
+        --bg-2: #0e1726;
+        --panel: rgba(16, 25, 41, 0.82);
+        --panel-2: rgba(13, 21, 35, 0.88);
+        --border: rgba(148, 163, 184, 0.16);
+        --border-strong: rgba(125, 211, 252, 0.18);
+        --text: #e5eefc;
+        --muted: #9cb0cb;
+        --muted-2: #7f93af;
+        --accent: #6dd6ff;
+        --accent-2: #9bffcf;
+        --accent-3: #ffd36d;
+        --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+        --radius: 24px;
+        --radius-sm: 18px;
+        --max: 1180px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(109, 214, 255, 0.18), transparent 30%),
+          radial-gradient(circle at top right, rgba(155, 255, 207, 0.14), transparent 28%),
+          radial-gradient(circle at 50% 20%, rgba(255, 211, 109, 0.08), transparent 22%),
+          linear-gradient(180deg, #03070d 0%, var(--bg) 40%, #050913 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 56px 56px;
+        mask-image: radial-gradient(circle at center, black 45%, transparent 100%);
+        opacity: 0.35;
+      }
+
+      .wrap {
+        width: min(var(--max), calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 40px;
+        position: relative;
+      }
+
+      .hero,
+      .card,
+      .status-card {
+        border: 1px solid var(--border);
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(16px);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 22px;
+        align-items: stretch;
+        border-radius: 30px;
+        padding: 34px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        right: -80px;
+        top: -80px;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(109, 214, 255, 0.18), transparent 70%);
+        filter: blur(12px);
+        animation: pulse 7s ease-in-out infinite;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 14px;
+        border: 1px solid rgba(109, 214, 255, 0.2);
+        border-radius: 999px;
+        background: rgba(8, 16, 27, 0.58);
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.79rem;
+        font-weight: 700;
+      }
+
+      .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: var(--accent-2);
+        box-shadow: 0 0 16px rgba(155, 255, 207, 0.8);
+      }
+      h1 {
+        margin: 18px 0 14px;
+        font-size: clamp(3rem, 7vw, 5.6rem);
+        line-height: 0.92;
+        letter-spacing: -0.07em;
+        max-width: 11ch;
+      }
+
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.75;
+        font-size: 1.06rem;
+        max-width: 64ch;
+      }
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 13px 18px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid transparent;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease,
+          box-shadow 180ms ease;
+        will-change: transform;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+      .btn.primary {
+        color: #05111a;
+        background: linear-gradient(135deg, var(--accent), #b8efff);
+        box-shadow: 0 10px 30px rgba(109, 214, 255, 0.18);
+      }
+
+      .btn.secondary {
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.04);
+        border-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .btn.secondary:hover {
+        border-color: rgba(109, 214, 255, 0.24);
+        background: rgba(109, 214, 255, 0.07);
+      }
+
+      .status-card {
+        border-radius: 26px;
+        padding: 22px;
+        display: grid;
+        gap: 14px;
+        align-content: start;
+      }
+
+      .stat {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .stat strong {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.35rem;
+        letter-spacing: -0.02em;
+      }
+
+      .stat span {
+        color: var(--muted);
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+      main {
+        display: grid;
+        gap: 22px;
+        margin-top: 22px;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+      }
+
+      .card {
+        border-radius: var(--radius);
+        padding: 26px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.45rem;
+        letter-spacing: -0.04em;
+      }
+
+      .section-copy {
+        margin: 0 0 18px;
+        color: var(--muted);
+        line-height: 1.72;
+      }
+
+      .feature-list,
+      .workflow-list {
+        display: grid;
+        gap: 14px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .feature-item,
+      .workflow-item {
+        padding: 17px 17px 17px 18px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.04);
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease;
+      }
+
+      .feature-item:hover,
+      .workflow-item:hover {
+        transform: translateY(-2px);
+        border-color: rgba(109, 214, 255, 0.22);
+        background: rgba(109, 214, 255, 0.07);
+      }
+
+      .feature-item strong,
+      .workflow-item strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 1rem;
+      }
+
+      .feature-item span,
+      .workflow-item span {
+        color: var(--muted);
+        line-height: 1.6;
+        display: block;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .pill {
+        border-radius: 999px;
+        padding: 9px 12px;
+        background: rgba(109, 214, 255, 0.12);
+        border: 1px solid rgba(109, 214, 255, 0.16);
+        color: var(--text);
+        font-size: 0.92rem;
+      }
+
+      .diagram {
+        display: grid;
+        gap: 14px;
+      }
+
+      .flow {
+        display: grid;
+        gap: 14px;
+      }
+
+      .flow-row {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr auto 1fr;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .node {
+        padding: 18px 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        text-align: center;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease;
+      }
+      .node:hover {
+        transform: translateY(-2px);
+        border-color: rgba(155, 255, 207, 0.22);
+      }
+
+      .node .label {
+        display: block;
+        font-weight: 800;
+        margin-bottom: 6px;
+      }
+
+      .node .desc {
+        display: block;
+        color: var(--muted);
+        font-size: 0.93rem;
+        line-height: 1.55;
+      }
+
+      .arrow {
+        color: var(--accent);
+        font-size: 1.6rem;
+        text-shadow: 0 0 18px rgba(109, 214, 255, 0.25);
+      }
+
+      .diagram-note {
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      .server-grid {
+        display: grid;
+        grid-template-columns: 1fr 0.95fr;
+        gap: 18px;
+      }
+
+      .server-box {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .server-box strong {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .server-box p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .server-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(155, 255, 207, 0.12);
+        border: 1px solid rgba(155, 255, 207, 0.18);
+        color: var(--accent-2);
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+
+      .badge-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent-2);
+        box-shadow: 0 0 14px rgba(155, 255, 207, 0.8);
+      }
+
+      .server-list {
+        display: grid;
+        gap: 12px;
+        margin-top: 14px;
+      }
+
+      .server-list .server-item {
+        padding: 14px 15px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .server-item .k {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .server-item .v {
+        color: var(--muted);
+        line-height: 1.55;
+        font-size: 0.95rem;
+      }
+
+      footer {
+        margin-top: 20px;
+        padding: 18px 20px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background:
+          linear-gradient(180deg, rgba(22, 27, 34, 0.94), rgba(13, 17, 23, 0.98));
+        color: #cdd9e5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+      }
+
+      .gh-mark {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-grid;
+        place-items: center;
+        background: #1f6feb;
+        color: white;
+        font-size: 0.9rem;
+        box-shadow: 0 8px 20px rgba(31, 111, 235, 0.22);
+      }
+      .footer-links {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        color: #8b949e;
+        font-size: 0.93rem;
+      }
+
+      .footer-links a {
+        color: #cdd9e5;
+        text-decoration: none;
+        transition: color 150ms ease;
+      }
+      .footer-links a:hover {
+        color: var(--accent);
+      }
+
+      .accent {
+        color: var(--accent-2);
+      }
+
+      .subtle {
+        color: var(--muted-2);
+      }
+
+      .fade-in {
+        animation: rise 650ms ease both;
+      }
+      .delay-1 {
+        animation-delay: 90ms;
+      }
+
+      .delay-2 {
+        animation-delay: 180ms;
+      }
+
+      .delay-3 {
+        animation-delay: 270ms;
+      }
+
+      .delay-4 {
+        animation-delay: 360ms;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: scale(1.08);
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .hero,
+        .grid-3,
+        .grid-2,
+        .server-grid,
+        .flow-row {
+          grid-template-columns: 1fr;
+        }
+
+        .flow-row {
+          gap: 10px;
+        }
+
+        .arrow {
+          transform: rotate(90deg);
+          text-align: center;
+        }
+
+        h1 {
+          max-width: none;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .wrap {
+          width: min(100% - 18px, var(--max));
+          padding-top: 18px;
+        }
+
+        .hero,
+        .card,
+        .status-card {
+          border-radius: 22px;
+        }
+        .hero {
+          padding: 22px;
+        }
+
+        .card,
+        .status-card {
+          padding: 20px;
+        }
+
+        footer {
+          padding: 16px 18px;
+        }
+
+        h1 {
+          font-size: clamp(2.7rem, 14vw, 4.6rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="hero fade-in">
+        <div>
+          <div class="eyebrow">
+            <span class="dot"></span>
+            OpenClaw platform overview
+          </div>
+          <h1>Build, automate, and ship with OpenClaw.</h1>
+          <p class="lead">
+            OpenClaw is a modern AI workspace for conversations, automation, and web-driven workflows.
+            It helps people move from ideas to execution with tools for Discord, plugins, browsers, Docker,
+            and practical day-to-day operations.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#features">Explore capabilities</a>
+            <a class="btn secondary" href="#architecture">View workflow</a>
+          </div>
+        </div>
+
+        <aside class="status-card">
+          <div class="stat">
+            <strong>Modern</strong>
+            <span>Dark theme, responsive layout, and polished UI details.</span>
+          </div>
+          <div class="stat">
+            <strong>Hands-on</strong>
+            <span>Built for real tasks, not just summaries and text-only chat.</span>
+          </div>
+          <div class="stat">
+            <strong>Connected</strong>
+            <span>Discord, browser flows, plugins, and server-backed workflows.</span>
+          </div>
+        </aside>
+      </section>
+
+      <main>
+        <section class="card fade-in delay-1" id="features">
+          <h2>Capabilities</h2>
+          <p class="section-copy">
+            OpenClaw is designed around practical work. These are the core things it can help with.
+          </p>
+
+          <div class="grid-3">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <strong>AI conversations</strong>
+                <span>Chat naturally with an assistant that can reason, explain, draft, and act.</span>
+              </li>
+              <li class="feature-item">
+                <strong>Discord integration</strong>
+                <span>Work inside group chats and respond in a way that fits the conversation.</span>
+              </li>
+            </ul>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <strong>Automation tools</strong>
+                <span>Coordinate multi-step tasks, repetitive workflows, and structured follow-through.</span>
+              </li>
+              <li class="feature-item">
+                <strong>Plugin system</strong>
+                <span>Extend the platform with focused skills and reusable capability modules.</span>
+              </li>
+            </ul>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <strong>Web interface</strong>
+                <span>Use a browser-friendly interface for building, inspecting, and interacting visually.</span>
+              </li>
+              <li class="feature-item">
+                <strong>Docker deployment</strong>
+                <span>Run and ship OpenClaw in containerized environments with predictable setup.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pill-row" aria-label="Focus areas">
+            <span class="pill">Conversation</span>
+            <span class="pill">Discord</span>
+            <span class="pill">Automation</span>
+            <span class="pill">Plugins</span>
+            <span class="pill">Web UI</span>
+            <span class="pill">Docker</span>
+          </div>
+        </section>
+
+        <section class="grid-2">
+          <section class="card fade-in delay-2" id="architecture">
+            <h2>Architecture / workflow</h2>
+            <p class="section-copy">
+              A simple view of how OpenClaw turns a request into an output.
+            </p>
+
+            <div class="diagram">
+              <div class="flow">
+                <div class="flow-row">
+                  <div class="node">
+                    <span class="label">User Request</span>
+                    <span class="desc">A message, task, or trigger arrives in Discord or the web UI.</span>
+                  </div>
+                  <div class="arrow">→</div>
+                  <div class="node">
+                    <span class="label">AI Core</span>
+                    <span class="desc">Interprets context, plans the next steps, and decides what to do.</span>
+                  </div>
+                  <div class="arrow">→</div>
+                  <div class="node">
+                    <span class="label">Tools / Skills</span>
+                    <span class="desc">Calls browser, plugins, automation, or other capabilities as needed.</span>
+                  </div>
+                </div>
+
+                <div class="flow-row">
+                  <div class="node">
+                    <span class="label">Execution</span>
+                    <span class="desc">Performs the actual task: editing, checking, generating, or operating.</span>
+                  </div>
+                  <div class="arrow">→</div>
+                  <div class="node">
+                    <span class="label">Verification</span>
+                    <span class="desc">Confirms the result and catches mistakes before reporting back.</span>
+                  </div>
+                  <div class="arrow">→</div>
+                  <div class="node">
+                    <span class="label">Delivery</span>
+                    <span class="desc">Sends a clear answer, artifact, or status update back to the user.</span>
+                  </div>
+                </div>
+              </div>
+              <p class="diagram-note">
+                This flow keeps OpenClaw practical: understand the request, use the right tool, validate the result,
+                then communicate it clearly.
+              </p>
+            </div>
+          </section>
+
+          <section class="card fade-in delay-3">
+            <h2>Demo / test server</h2>
+            <p class="section-copy">
+              OpenClaw can be exercised in a safe test environment for demos, experiments, and validation.
+            </p>
+
+            <div class="server-grid">
+              <div class="server-box">
+                <div class="server-badge">
+                  <span class="badge-dot"></span>
+                  Demo-ready
+                </div>
+                <strong>Use case</strong>
+                <p>
+                  Show off the assistant, verify UI behavior, and try workflows without touching production systems.
+                </p>
+
+                <div class="server-list">
+                  <div class="server-item">
+                    <span class="k">Test chat</span>
+                    <span class="v">Simulate real conversations and response formatting.</span>
+                  </div>
+                  <div class="server-item">
+                    <span class="k">Feature validation</span>
+                    <span class="v">Check plugins, browser actions, and deployment behavior.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="server-box">
+                <strong>What it supports</strong>
+                <p>
+                  A demo server can host the web interface, exercise automation paths, and provide a repeatable
+                  environment for showcasing OpenClaw capabilities.
+                </p>
+
+                <div class="server-list">
+                  <div class="server-item">
+                    <span class="k">Web UI</span>
+                    <span class="v">Open a clean browser-based front end.</span>
+                  </div>
+                  <div class="server-item">
+                    <span class="k">Containerized runtime</span>
+                    <span class="v">Deploy in Docker for reproducible setup and demos.</span>
+                  </div>
+                  <div class="server-item">
+                    <span class="k">Safe experimentation</span>
+                    <span class="v">Try ideas before promoting them to a live environment.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="card fade-in delay-4">
+          <h2>Why it feels useful</h2>
+          <p class="section-copy">
+            OpenClaw aims to behave like a capable teammate: concise when needed, proactive when useful,
+            and focused on getting real work done.
+          </p>
+          <div class="grid-3">
+            <div class="server-box">
+              <strong>Fast to understand</strong>
+              <p>Clear sections, visual hierarchy, and a simple story about what it can do.</p>
+            </div>
+            <div class="server-box">
+              <strong>Easy to extend</strong>
+              <p>Plugins and skills let the system grow with new tools and workflows.</p>
+            </div>
+            <div class="server-box">
+              <strong>Built for action</strong>
+              <p>Not just an answer engine. It can connect, automate, and verify outcomes.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="fade-in delay-4">
+        <div class="footer-left">
+          <span class="gh-mark">GH</span>
+          <span>OpenClaw</span>
+        </div>
+        <div class="footer-links">
+          <span class="subtle">GitHub-style dark footer</span>
+          <span>•</span>
+          <a href="#features">Features</a>
+          <a href="#architecture">Workflow</a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const target = document.querySelector(link.getAttribute("href"));
+          if (!target) return;
+          event.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -19,7 +19,7 @@
 | :--- | :--- |
 | OpenAI API Key | [![Open In Google Docs](https://github.com/pvateekul/bjc-agentic-ai/blob/main/image/ggdoclogo.svg?raw=true)](https://docs.google.com/document/d/1UpW0-7PNaeWjs2EGLisDazIGes8GaXdS/edit?usp=sharing&ouid=110988009260882465038&rtpof=true&sd=true) |
 | Groq API Key | [![Open In Google Docs](https://github.com/pvateekul/bjc-agentic-ai/blob/main/image/ggdoclogo.svg?raw=true)](https://docs.google.com/document/d/1OFwzdRdfgwD4coupj9H8qKJAUJUIq781/edit?usp=sharing&ouid=110988009260882465038&rtpof=true&sd=true) |
-| Codex / Ultralytics | [![Open In Google Docs](https://github.com/pvateekul/bjc-agentic-ai/blob/main/image/ggdoclogo.svg?raw=true)](https://docs.google.com/document/d/1lLM46z8YWxLd3a2zkb5dX0MASFGpInz5e8UzMY_Nk80/edit?usp=sharing) |
+| Codex / Ultralytics / Discord | [![Open In Google Docs](https://github.com/pvateekul/bjc-agentic-ai/blob/main/image/ggdoclogo.svg?raw=true)](https://docs.google.com/document/d/1lLM46z8YWxLd3a2zkb5dX0MASFGpInz5e8UzMY_Nk80/edit?usp=sharing) |
 
 ---
 
@@ -49,3 +49,10 @@
 3. No-code Version : [Slide](https://drive.google.com/file/d/1N8B21HtyZ4pRGKyG23aNTk44yMs4O03j/view?usp=sharing)
 - Dataset 1 (Polyp) : [Download](https://drive.google.com/file/d/11xGcZZ-6xOVMiy7el7uzo8W-6xjZxOfl/view?usp=sharing)
 - Dataset 2 (Food Defect Detection) : [Download](https://drive.google.com/file/d/1Ydb5qPCX8VF-eCkHzOn6iZi3v1cy4eIf/view?usp=sharing)
+
+## 5. OpenClaw
+
+1. Discord Server Link: https://discord.com/invite/GsBa24QxjZ
+2. OpenClaw Set-up Slide: [link](https://drive.google.com/file/d/1-Y-AJ2EeigW0LekBUKmKssOgvfc9h_U6/view?usp=drive_link)
+3. Mock Data: [link](https://drive.google.com/file/d/1v2T2NzxOHH-E1wA09wL3LUgV78RTxerJ/view?usp=drive_link)
+4. OpenClaw Lab Demo Prompts: [Prompt Templates](./5_OpenClaw/Prompts.md)
