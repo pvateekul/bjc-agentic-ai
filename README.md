@@ -34,6 +34,7 @@
 
 1. Attachment: [Download Codex Lab Attachments (.zip)](https://drive.google.com/file/d/1Kp9yCWbxlbH-vPmK3HvNGYFNJJM1kxV1/view?usp=sharing)
 2. Codex Lab Sheet [![Open In Google Docs](https://github.com/pvateekul/bjc-agentic-ai/blob/main/image/ggdoclogo.svg?raw=true)](https://docs.google.com/document/d/1SfCI6p4yOJ9RkIKWNJGU6aY3EctLOXwh/edit?usp=sharing&ouid=110988009260882465038&rtpof=true&sd=true")
+<!-- 3. Codex VSCode : [![Open In Google Docs](https://docs.google.com/document/d/1-yw20j5-Sisopcd-O9kX18SCozAEHZup/edit?usp=sharing&ouid=110988009260882465038&rtpof=true&sd=true)] -->
 
 ## 3. NotebookLM
 
