@@ -1,5 +1,7 @@
 # OpenClaw Demo Prompts
 
+***Discord Link : https://discord.com/invite/GsBa24QxjZ
+
 This document contains all prompts used in the OpenClaw presentation and demonstrations.
 
 > **Note:** Replace all placeholders in the format `<...>` with values appropriate for your use case before running the prompts.
