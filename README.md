@@ -52,7 +52,7 @@
 
 ## 5. OpenClaw
 
-1. Discord Server Link: https://discord.com/invite/GsBa24QxjZ
-2. OpenClaw Set-up Slide: [link](https://drive.google.com/file/d/1-Y-AJ2EeigW0LekBUKmKssOgvfc9h_U6/view?usp=drive_link)
-3. Mock Data: [link](https://drive.google.com/file/d/1v2T2NzxOHH-E1wA09wL3LUgV78RTxerJ/view?usp=drive_link)
-4. OpenClaw Lab Demo Prompts: [Prompt Templates](./5_OpenClaw/Prompts.md)
+1. OpenClaw Set-up Slide: [link](https://drive.google.com/file/d/1-Y-AJ2EeigW0LekBUKmKssOgvfc9h_U6/view?usp=drive_link)
+2. Mock Data: [link](https://drive.google.com/file/d/1v2T2NzxOHH-E1wA09wL3LUgV78RTxerJ/view?usp=drive_link)
+3. OpenClaw Lab Demo Prompts: [Prompt Templates](./5_OpenClaw/Prompts.md)
+4. Discord Server Link: https://discord.com/invite/GsBa24QxjZ
